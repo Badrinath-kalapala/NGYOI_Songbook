@@ -1,0 +1,144 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f7f7f7;
+  color: #333;
+}
+
+/* Header */
+.site-header {
+  background: rgb(0, 3, 66);
+  color: white;
+  padding: 0.8rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Top row: logo left, title center */
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  left: 0.8rem;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.site-header h1 {
+  font-size: 1.4rem;
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+
+/* Search bar below */
+.site-header input {
+  margin-top: 0.6rem;
+  padding: 0.5rem;
+  width: 95%;
+  max-width: 500px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Main content */
+main {
+  padding: 1rem;
+}
+
+/* Song list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: white;
+  margin: 0.4rem 0;
+  padding: 0.8rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  font-size: 1rem;
+}
+
+/* Song lyrics */
+#lyrics {
+  padding: 1rem;
+  max-width: 95%;
+  margin: auto;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+#lyrics p {
+  margin: 0.6rem 0;
+}
+
+/* Footer */
+.site-footer {
+  background: #333;
+  color: #ccc;
+  text-align: center;
+  padding: 0.8rem;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+}
+
+.site-footer a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Back link */
+.back-link {
+  display: inline-block;
+  margin: 0.5rem 0;
+  color: #ffd700;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* ✅ Mobile responsive tweaks */
+@media (max-width: 600px) {
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  .site-header h1 {
+    font-size: 1rem;
+  }
+  #lyrics {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  li {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+}

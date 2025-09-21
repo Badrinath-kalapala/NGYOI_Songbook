@@ -1,0 +1,6 @@
+/church-songs
+  ├── index.html      (home page with search + list)
+  ├── song.html       (lyrics display page)
+  ├── songs.json      (all 600 songs go here)
+  ├── styles.css      (styling)
+  └── script.js       (search + navigation)
